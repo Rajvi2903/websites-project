@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolates</title>
+    <link rel="stylesheet" href="./chocolates.css">
+    <script src="object.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof chocolates_list !== 'undefined' && chocolates_list.length > 0) {
+                getList();
+            } 
+        });
+
+        function getList() {
+            var dvProducts = document.getElementById('dvProducts');
+            dvProducts.innerHTML = ''; 
+            var ul = document.createElement('div');
+            ul.className = 'chocolates-grid';
+
+            for (var i = 0; i < chocolates_list.length; i++) {
+                var li = document.createElement('div');
+                li.className = 'chocolate-item';
+
+                var img = document.createElement('img');
+                img.src = chocolates_list[i].prodimage;
+                img.alt = chocolates_list[i].name;
+                img.className = 'chocolate-img';
+                li.appendChild(img);
+
+                var name = document.createElement('strong');
+                name.innerHTML = chocolates_list[i].name;
+                name.className="chocolate-name";
+                li.appendChild(name);
+
+                var price = document.createElement('p');
+                price.innerHTML = 'Price: ₹' + chocolates_list[i].Price;
+                price.className="chocolate-price";
+                li.appendChild(price);
+
+                var button = document.createElement('button');
+                button.innerHTML = 'Add to Cart';
+                button.className = 'add-to-cart';
+                
+                
+                li.appendChild(button);
+
+                ul.appendChild(li);
+            }
+
+            dvProducts.appendChild(ul);
+        };
+    </script>
+</head>
+<body>
+    <header class="header_section">
+        <div class="main" id="main">
+            <div class="menu">
+                <div class="logo">
+                    <img src="./imgs/Melting Chocolate House Logo.jpg" alt="Logo">
+                </div>
+            </div>
+            <nav>
+                <ol>
+                    <li class="menu-item"><a href="./main.html">Home</a></li>
+                    <li class="menu-item"><a href="./about.html">About</a></li>
+                    <li class="menu-item"><a href="./chocolates.html">Chocolates</a></li>
+                    <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <div id="dvProducts"></div>
+</body>
+</html>

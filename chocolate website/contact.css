@@ -1,0 +1,166 @@
+/* General Styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: peachpuff;
+}
+
+/* Header Section */
+.header_section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.logo img {
+  height: 77px;
+  width: 107px;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  z-index: 2;
+}
+
+ol {
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 5px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 13px;
+  opacity: 0.6;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.menu-item a:hover {
+  opacity: 1;
+}
+
+/* Container */
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styling */
+header {
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(52, 23, 2) 3px solid;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: -31px;
+}
+
+header .highlight, header .current a {
+  color: rgb(52, 23, 2);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 53px;
+}
+
+#main-content {
+  padding: 20px;
+  background: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+}
+
+#contact-form input[type="submit"] {
+  background: #35424a;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+  background: rgb(66, 29, 3);
+}
+
+/* Store Info Section */
+.store-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cafe_img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.store-info img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.store-info h2 {
+  margin-top: 0;
+}

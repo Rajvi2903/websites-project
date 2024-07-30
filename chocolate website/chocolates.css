@@ -1,0 +1,115 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: peachpuff;
+}
+
+.header_section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.logo img {
+  height: 77px;
+  width: 107px;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  z-index: 2;
+  background-color: white;
+}
+
+ol {
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 5px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+  padding: 13px;
+  opacity: 0.6;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.menu-item a:hover {
+  opacity: 1;
+}
+#dvProducts {
+    padding: 20px;
+  }
+  
+  .chocolates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .chocolate-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chocolate-img {
+    width: 100%;
+    height:  70%;
+    object-fit: cover;
+  }
+ .chocolate-name {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .add-to-cart {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color:rgb(91, 41, 5);
+    color: white;
+    cursor: pointer;
+
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: rgb(59, 26, 2);
+  }
