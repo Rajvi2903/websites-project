@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIEFINDER</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <span><img src="./imgs/LOGO.png" alt="Logo"></span>
+            <div>
+                <button class="btn">English</button>
+                <button class="btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="text">
+            <span>Your Gateway to Cinematic Adventures.</span>
+            <span>Explore. Discover. Enjoy.</span>
+            <div>
+                <input type="email" placeholder="Email Address">
+                <button class="btn-red">Let's Explore</button>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <section class="first">
+        <div>
+            <span>Select a movie as per your choice.</span>
+            <span>Easily navigate and discover new movies with our intuitive design.</span>
+        </div>
+        <div class="secimg">
+            <div class="tv-container">
+                <img src="./imgs/tv.png (640×480).png" alt="TV">
+              <video src="./videos/chrome-extension___nlipoenfbbikpbjkfpfillcgkoblgpmj_setup-react.html_from=install&isSignIn=true.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="second">
+        <span>We bring you closer to the cinematic experiences you love.</span>
+        <div class="secimg">
+            <div class="tv-container">
+                <img src="./imgs/mobile img.png" alt="Mobile Image">
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>What is MOVIEFINDER?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">MOVIEFINDER is a personalized movie recommendation system that helps you discover new movies based on your preferences. Whether you want to watch something on TV, mobile, or other devices, MOVIEFINDER offers tailored suggestions to enhance your cinematic experience.</div>
+        </div>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>How does MOVIEFINDER recommend movies?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">MOVIEFINDER uses advanced algorithms and machine learning techniques to analyze your viewing history, preferences, and ratings. It then recommends movies that match your tastes and interests.</div>
+        </div>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>Is MOVIEFINDER free to use?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">Yes, MOVIEFINDER offers a free tier with basic features. We also offer a premium subscription that provides additional benefits such as ad-free browsing, early access to new features, and more personalized recommendations.</div>
+        </div>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>Can I watch movies directly on MOVIEFINDER?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">MOVIEFINDER is a platform for recommending movies. It does not host movies directly, but it provides links to where you can watch them.</div>
+        </div>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>How does MOVIEFINDER handle privacy and data security?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">We take your privacy and data security seriously. All personal information is stored securely, and we use encryption to protect your data. We do not share your personal information with third parties without your consent.</div>
+        </div>
+        <div class="faqbox" onclick="toggleFaq(this)">
+            <span>Can I request specific genres or types of movies?</span>
+            <img src="./imgs/plus-sign-stroke-rounded.svg">
+            <div class="answer">Yes, you can customize your preferences to include specific genres, languages, and types of movies. This helps MOVIEFINDER provide more accurate recommendations based on your interests.</div>
+        </div>
+    </section>
+    <div class="signin-container" id="signInContainer">
+        <div class="signin-form">
+            <form id="signInForm" class="form">
+                <h2>Sign In</h2>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <span class="bar"></span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="bar"></span>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+
+    <div class="footer-legal">
+        <h4>Legal</h4>
+        <ul>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+        <h4>Follow Us</h4>
+        <p>Stay connected with us on social media for the latest updates and movie recommendations.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="./imgs/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/?lang=en-in"><img src="./imgs/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="./imgs/insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com"><img src="./imgs/icons8-linkedin-48.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2024 MOVIEFINDER. All rights reserved.</p>
+</div>
+</footer>
+<script src="moviefinder.js"></script>
+</body>
+</html>
